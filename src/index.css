@@ -1,0 +1,90 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+#root {
+  background-color: rgb(74, 72, 77);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.box {
+  background-color: rebeccapurple;
+  padding: 2rem;
+  border-radius: 20px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  width: 600px;
+  max-width: 100%;
+  text-align: center;
+}
+
+.box h2 {
+  margin-top: 0;
+}
+
+.box p {
+  margin: 2rem;
+  font-size: 1rem;
+}
+
+.box button {
+  background-color: yellow;
+  border-radius: 10px;
+  border: 0;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
+  padding: 1rem;
+  font-family: inherit;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-align: center;
+  font-weight: bolder;
+  font-size: 1rem;
+}
+
+.box button:focus {
+  outline: none;
+}
+
+.box button:hover {
+  background-color: #cc79db;
+}
+
+.box button:active {
+  background-color: #b932d1;
+  box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.4);
+  transform: scale(0.95);
+}
+
+.box button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.box button span:after {
+  content: "\00bb";
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.box button:hover span {
+  padding-right: 25px;
+}
+
+.box button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
